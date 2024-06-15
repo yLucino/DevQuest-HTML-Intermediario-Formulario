@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: 16px "Outfit", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url(assets/image/background-image-nature.jpg);
+  background-repeat: no-repeat;
+}
+
+.container {
+  max-width: 450px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.top-box-text-register {
+  padding-bottom: 5px;
+}
+
+.top-box-text-register p {
+  padding-bottom: 10px;
+  color: #696969;
+}
+
+.top-box-text-register h1 {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.top-box-text-register .material-symbols-outlined {
+  display: flex;
+  justify-content: end;
+  position: relative;
+  width: 100%;
+  z-index: 1; 
+}
+
+.input-box-register {
+  padding: 10px;
+  margin: 5px 0;
+  width: 100%;
+  border: 1px solid #a3a3a3;
+  border-radius: 3px;
+  background-color: #a3a3a325;
+}
+
+.name-completo {
+  margin-bottom: -20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#nome {
+  margin-right: 10px;
+}
+
+.box-select-nascimento .material-symbols-outlined, .box-input-genero .material-symbols-outlined {
+  color: #696969;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.box-select-nascimento p, .box-input-genero p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #696969;
+}
+
+.box-select-nascimento .select-nascimento {
+  width: 31.5%;
+  padding: 10px;
+  margin-top: 2px;
+  border: 1px solid #a3a3a3;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.box-nascimento, .box-genero {
+  display: flex;
+  justify-content: space-between;
+}
+
+.box-input-genero .genero {
+  display: flex;
+  justify-content: space-between;
+  width: 31.5%;
+  border: 1px solid #a3a3a3;
+  border-radius: 3px;
+  padding: 10px;
+  margin: 2px 0 10px 0;
+  cursor: pointer;
+  
+  label {
+    cursor: pointer;
+  }
+}
+
+.footer-text-description p {
+  font-size: 13px;
+  color: #696969;
+  margin-bottom: 30px;
+  text-align: justify;
+}
+
+.footer-text-description span {
+  font-size: 13px;
+  color: rgb(71, 71, 255);
+  cursor: pointer;
+}
+
+.footer-btn-register {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.footer-btn-register button {
+  padding: 10px;
+  width: 230px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  background-color: rgb(36, 155, 0);
+  border-radius: 5px;
+  font-size: 23px;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.footer-btn-register button:hover {
+  background-color: rgb(23, 99, 0);
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    width: 330px;
+  }
+  .box-input-genero .genero label {
+    font-size: 13px;
+  }
+}

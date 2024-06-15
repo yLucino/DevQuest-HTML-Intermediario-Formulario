@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário Cadastre-se</title>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="top-box-text-register">
+      <span class="material-symbols-outlined">
+        close
+      </span>
+      <h1>Cadastre-se</h1>
+      <p>É rápido e fácil.</p>
+      <hr>
+    </div>
+
+    <div class="main-box-inputs-register">
+      <div class="name-completo">
+        <input class="input-box-register" type="text" name="nome" id="nome" placeholder="Nome">
+        <input class="input-box-register" type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome">
+      </div>
+      <br>
+      <input class="input-box-register" type="text" name="numeroOuEmail" id="numeroOuEmail" placeholder="Celular ou E-mail">
+      <br>
+      <input class="input-box-register" type="password" name="password" id="password" placeholder="Nova senha">
+    </div>
+
+    <div class="box-select-nascimento">
+      <p>
+        Data de nascimento: 
+        <span class="material-symbols-outlined">help</span>
+      </p>
+      <div class="box-nascimento"> 
+        <select class="select-nascimento" name="dataNascimento" id="dataNascimento"></select>
+        <select class="select-nascimento" name="mesNascimento" id="mesNascimento"></select>
+        <select class="select-nascimento" name="anoNascimento" id="anoNascimento"></select>
+      </div>
+    </div>
+
+    <div class="box-input-genero">
+      <p>
+        Genero:
+        <span class="material-symbols-outlined">help</span>
+      </p>
+      <div class="box-genero">
+        <div class="genero">
+          <label for="feminino">Feminino</label>
+          <input type="radio" name="genero" id="feminino" value="feminino">
+        </div>
+        <div class="genero">
+          <label for="masculino">Masculino</label>
+          <input type="radio" name="genero" id="masculino" value="masculino">
+        </div>
+        <div class="genero">
+          <label for="outroGenero">Outro</label>
+          <input type="radio" name="genero" id="outroGenero" value="outroGenero">
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-text-description">
+      <p>Ao clicar em Cadastre-se, você concorda com nossos <span>Termos, Políticas de Dados e Política de Cookies.</span> Você poderá receber notificações por SMS e cancelar isso quando quiser.</p>
+    </div>
+
+    <div class="footer-btn-register">
+      <button>Cadastre-se</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
