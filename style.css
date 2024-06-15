@@ -9,11 +9,19 @@
 
 body {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
   background-image: url(assets/image/background-image-nature.jpg);
   background-repeat: no-repeat;
+}
+
+#title {
+  font-size: 33px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 20px;
 }
 
 .container {
@@ -42,6 +50,7 @@ body {
   justify-content: end;
   position: relative;
   width: 100%;
+  margin-bottom: -25px;
   z-index: 1; 
 }
 
